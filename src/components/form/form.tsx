@@ -2,11 +2,12 @@ import logo from "../../assets/logo.png";
 import { FcGoogle } from "react-icons/fc";
 import { FaApple } from "react-icons/fa";
 import { IconType } from "react-icons";
+import { AiOutlineEyeInvisible, AiOutlineEye } from "react-icons/ai";
 
 const Button = (props: { children: string; icon: IconType }): JSX.Element => {
   return (
-    <button className="border-black border-solid border-[3px] rounded-md p-2 font-bold flex justify-center items-center gap-4">
-      <props.icon style={{ textAlign: "center", fontSize: "2rem" }} />
+    <button className="border-black border-solid border-[3px] rounded-md p-2 font-bold flex justify-center items-center gap-4 duration-150 hover:bg-zinc-100">
+      <props.icon className="text-center text-3xl" />
       {props.children}
     </button>
   );
@@ -45,7 +46,9 @@ const Form = () => {
           name="Password"
           placeholder="Password"
         ></input>
-        <button className="bg-black text-white p-2 rounded-md">Log In</button>
+        <button className="bg-black text-white p-2 rounded-md hover:text-zinc-300 duration-150">
+          Log In
+        </button>
       </form>
       <div className="flex flex-col my-8 gap-4">
         <p className="underline hover:no-underline cursor-pointer">
@@ -79,9 +82,9 @@ const Form = () => {
         apply
       </p>
       <div className="mt-auto gap-4 flex text-zinc-400">
-        <a>Terms</a>
-        <a>Privacy</a>
-        <a>Support</a>
+        <a className="cursor-pointer">Terms</a>
+        <a className="cursor-pointer">Privacy</a>
+        <a className="cursor-pointer">Support</a>
       </div>
     </div>
   );
