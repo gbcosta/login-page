@@ -12,6 +12,8 @@
 </div>
 Just a login page made with React and Tailwindcss
 
+<br />
+
 <img src="./public/home.png"/>
 
 </div>
