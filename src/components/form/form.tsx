@@ -37,18 +37,18 @@ const Form = () => {
       </div>
       <form className="flex 2xl:gap-4 gap-2 flex-col">
         <input
-          className="border-2 border-zinc-400 w-full 2xl:p-2 p-1 rounded-md font-bold sm:text-sm"
+          className="border-2 border-zinc-400 w-full 2xl:p-3 p-2 rounded-md font-bold sm:text-sm"
           type="text"
           name="email"
           placeholder="Email"
         ></input>
         <input
-          className="border-2 border-zinc-400 w-full 2xl:p-2 p-1 rounded-md font-bold sm:text-sm"
+          className="border-2 border-zinc-400 w-full 2xl:p-3 p-2 rounded-md font-bold sm:text-sm"
           type="password"
           name="Password"
           placeholder="Password"
         ></input>
-        <button className="bg-black text-white 2xl:p-2 p-1 rounded-md hover:text-zinc-300 duration-150 sm:text-sm">
+        <button className="bg-black text-white 2xl:p-3 p-2 rounded-md hover:text-zinc-300 duration-150 sm:text-sm">
           Log In
         </button>
       </form>
